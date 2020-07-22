@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<title>CHARAN M K</title>
+	<style type="text/css">
+				#imgs {
+  					border-radius: 50%;
+  					border-color: white;
+					border: 8px solid white;
+					}
+
+				#cursor {
+  					font-size: 60px;
+					}
+
+				p{
+				  font-color: white;
+				}
+
+				.topnav {
+  				overflow: hidden;
+				  background-color: #333;
+				}
+
+				.topnav a {
+				  float: left;
+				  color: #f2f2f2;
+				  text-align: center;
+				  padding: 14px 16px;
+				  text-decoration: none;
+				  font-size: 17px;
+				}
+
+				.topnav a:hover {
+				  background-color: #ddd;
+				  color: black;
+				}
+
+				.topnav a.active {
+				  background-color: white;
+				  color: black;
+				}
+	</style>
+</head>
+<body>
+
+
+<!-- nava bar -->
+
+
+<div class="topnav" style="font-family:Courier ">
+  <a class="active" href="#about">About Me</a>
+  <a type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg" style="background-color:#333;border-width: 0px; ">Skills</a>
+  <a href="#contact">Project's</a>
+  <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#education"  style="background-color:#333;border-width: 0px; ">Education</a>
+  <a href="#skills">Blogs</a>
+  <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"	style="float: right;background-color:#333;border-width: 0px; ">Contact Me</a>
+</div>
+
+
+<!-- main --> 
+
+		<div class="container-fluid" style="background-color: black;color:white;">
+  		<div class="row">
+    	<div class="col-sm-5">
+    		<img src="/home/ranger/Desktop/exploit/newpic.png" id="imgs" alt="Avatar" onload="typeWriter()"style="width:400px;margin-top: 50px;margin-bottom: 50px;margin-left: 200px;">
+       	</div>
+    	<div class="col-sm-6">
+    		<h1 style="margin-top: 80px;font-family:Courier"></h1>
+    		<script>
+    			var cursor = true;
+				var speed = 220;
+
+				setInterval(() => {
+   				if(cursor) {
+			    document.getElementById('cursor').style.opacity = 0;
+			     cursor = false;
+			   }else {
+			     document.getElementById('cursor').style.opacity = 1;
+			     cursor = true;
+			   }
+			}, speed);
+    		</script>
+
+    		<p style="font-size: 50px;font-family: Courier">CHARAN M K<span id="cursor">|</span></p>
+    		<p> 
+    			<script type="text/javascript">
+    				var i = 0;
+					var txt = 'Student,Software Engineer and Cyber Security Enthusiast.';
+					var speed = 50;
+
+					function typeWriter() {
+  					if(i < txt.length) {
+    				document.getElementById("typing").innerHTML += txt.charAt(i);
+    				i++;
+    				setTimeout(typeWriter, speed);
+  						}
+					}
+    			</script>
+				<p id="typing" style="font-size: 25px;font-family: Courier"></p>
+
+    		</p>
+			<a href="https://github.com/RangerOne-1" style="margin-right: 20px;"><i class="fa fa-github" style="font-size:48px;color:red;margin-left: 0px;"></i></a>
+			<a href="https://twitter.com/Ranger_one_"><i class="fa fa-twitter-square" style="font-size:48px;color:red;margin-right: 20px;margin-top: 50px;"></i></a>
+			<a href="#about"><i class="fa fa-instagram" style="font-size:48px;color:red;margin-right: 20px"></i></a>
+			<a href="https://www.linkedin.com/in/charan-m-k-384037184/"><i class="fa fa-linkedin-square" style="font-size:48px;color:red;margin-right: 20px"></i></a>
+    	</div>
+  </div>
+</div>
+
+		
+<!-- cards -->
+
+
+<div class="row" id='about'>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body" style="margin-top: 50px;margin-left:90px;">
+        <center><h1 class="card-title" style="font-family: Courier;font-size: 50px">About Me</h1></center><br>
+        <p class="card-text" style="font-size: 22px;font-family: Courier">Hello, I am <b>Charan M K</b> pursuing undergraduate degree in Computer Science department at <b>UVCE,bengaluru</b>. I am intrested in programming,Network and web security and a passionate programmer. who is always intrested in learning new things,and apply those skills in innovating applications.  </p>
+
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+      	<img src="/home/ranger/Desktop/exploit/pic1.jpg" style="width:450px;border-radius:2%;border-color: black;border:8px solid black;margin-top: 50px;margin-left: 210px;">
+      </div>
+    </div>
+  </div>
+
+
+<!-- contact me -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="font-family: Courier">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <center><h5 class="modal-title" id="exampleModalLabel" style="font-family: :Courier;font-size: 40px;">Contact Me</h5></center>
+      </div>
+      <div>
+      	<a href="https://github.com/RangerOne-1" style="margin-right: 20px;"><i class="fa fa-github" style="font-size:48px;color:red;margin-left: 170px;px;"></i></a>
+			<a href="https://twitter.com/Ranger_one_"><i class="fa fa-twitter-square" style="font-size:48px;color:red;margin-right: 20px;margin-top: 20px;"></i></a>
+			<a href="#about"><i class="fa fa-instagram" style="font-size:48px;color:red;margin-right: 20px"></i></a>
+			<a href="https://www.linkedin.com/in/charan-m-k-384037184/"><i class="fa fa-linkedin-square" style="font-size:48px;color:red;margin-right: 20px"></i></a><br><br>
+ 		<i class="fa fa-envelope" style="font-size:30px;color:red;margin-left: 150px;margin-bottom: 30px;margin-top: 20px;"></i><a style="font-size: 20px;margin-left: 20px;text-decoration:none;color: black;">charanmk99@gmail.com</a><br>
+ 		<i class="fa fa-mobile" style="font-size:30px;color:red;margin-left: 150px;margin-bottom: 20px;"><a style="font-size: 20px;margin-left: 30px;text-decoration: none;color: black;">+91 90359 58711</a></i>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Education -->
+
+<!-- Modal -->
+<div class="modal fade bd-example-modal-sm" id="education" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="font-family: Courier;background-color: black;">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <center><h5 class="modal-title" id="exampleModalLabel" style="font-family:Courier;font-size: 40px;">Education</h5></center>
+      </div>
+      <div class="modal-body">
+        <div style="margin-bottom: 20px;border:1px solid black; border-bottom-width: 1px; border-left: 0px;border-top: 0px;border-right: 0px;">
+        <h4 style="color:red">2017-2021</h4>
+        <h3>Bachelor of Engineering in Computer Science and Engineering</h3>
+        <b><p>University Visveswaraya College of Engineering</p></b>
+        </div>
+        <div style="margin-bottom: 20px;border:1px solid black; border-bottom-width: 1px; border-left: 0px;border-top: 0px;border-right: 0px;">
+        	<h4 style="color:red">2016-2017</h4>
+        <h3>2<sup>nd</sup> PUC</h3>
+        <strong><p>mangalore Independent Pre-University College</p></strong>
+        </div>
+        <div >
+        	<h4 style="color:red">2014-2015</h4>
+        <h3>Karnataka State Board</h3>
+        <b><p>St.Philomena's Memorial High School</p></b>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- skills -->
+<div class="modal fade bd-example-modal-lg w3-container" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="font-family:Courier;background-color: black;">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <center><h5 class="modal-title" id="exampleModalLabel" style="font-family:Courier;font-size: 40px;">Skills</h5></center>
+      </div>
+      <div>
+ <h3 style="margin-left: 20px;font-family:Courier;">Programming Language</h3>
+      	<div class="w3-light-grey" style="margin-left: 20px;margin-right: 20px;">
+  <div class="w3-container w3-orange w3-center" style="width:65%">C</div>
+</div><br>
+<div class="w3-light-grey" style="margin-left: 20px;margin-right: 20px;">
+  <div class="w3-container w3-green w3-center" style="width:70%">C++</div>
+</div><br>
+
+<div class="w3-light-grey" style="margin-left: 20px;margin-right: 20px;">
+  <div class="w3-container w3-red w3-center" style="width:60%">My SQL</div>
+</div><br>
+<h3 style="margin-left: 20px;font-family:Courier;">Scripting Language</h3>
+<div class="w3-light-grey" style="margin-left: 20px;margin-right: 20px;">
+  <div class="w3-container w3-green w3-center" style="width:75%">python</div>
+</div><br>
+
+<div class="w3-light-grey" style="margin-left: 20px;margin-right: 20px;">
+  <div class="w3-container w3-orange" style="width:50%">PHP</div>
+</div><br>
+
+<div class="w3-light-grey" style="margin-left: 20px;margin-right: 20px;">
+  <div class="w3-container w3-green" style="width:80%">Bash Scripting</div>
+</div><br>
+
+<h3 style="margin-left: 20px;font-family:Courier;">Others</h3>
+
+	<div class="w3-light-grey" style="margin-left: 20px;margin-right: 20px;">
+  <div class="w3-container w3-green" style="width:75%">HTML,CSS,BootStrap and Javascript</div>
+</div><br>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- projects -->
+
+
+
+</body>
+</html>
