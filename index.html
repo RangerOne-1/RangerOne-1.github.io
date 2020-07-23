@@ -82,6 +82,18 @@
   				margin-left: 150px;
   				margin-bottom: 20px;
   			}
+  			#cardone{
+  				border:3px solid black;
+  				margin-right: 35px;
+  				margin-left: 20px;
+  				background-color: black;
+  			}
+  			.projbut{
+  				float: right;
+  				margin-bottom:10px;
+  				background-color: #E31F1C;
+  				margin-left: 10px;
+  			}
 
 				@media only screen and (max-width: 500px) {
  			html{
@@ -160,11 +172,24 @@
   				margin-left: 120px;
   				margin-bottom: 20px;
   			}
+  			#cardone{
+  				border:3px solid black;
+  				margin-right: 35px;
+  				margin-left: 20px;
+  				margin-bottom: 50px;
+  				background-color: black;
+  			}
+  			.projbut{
+  				float: right;
+  				background-color: #E31F1C;
+  			}
 	</style>
 </head>
 <body>
 
-	<script type="text/javascript">
+
+
+<script type="text/javascript">
 	
 	 if (navigator.userAgent.match(/Android/i) 
                 || navigator.userAgent.match(/webOS/i) 
@@ -175,14 +200,10 @@
                 || navigator.userAgent.match(/Windows Phone/i)) { 
         		alert('This Website is under Construction for Mobile Browser, It has Good View in Web Browser');
         } 
-	</script>
+</script>
 
-	
-	
-	
 
 <!-- nava bar -->
-
 
 <div class="topnav" id='navbar' style="font-family:Courier;">
   <a class="active" href="#about">About Me</a>
@@ -438,16 +459,16 @@
 
     	<!-- first line -->
     		<div id='modals' class="row" style='margin-top: 20px;margin-bottom: 20px;margin-left: 20px;color:white;'>
-  				<div class="col-sm-5 " style="border:3px solid black;margin-right: 35px;margin-left: 20px;background-color: black;">
+  				<div class="col-sm-5 " id='cardone' style="width:380px">
 				    <div class="card" style="height: 290px;">
 				      <div class="card-body">
 				        <h3 class="card-title" id='first' style="font-family:Courier;font-size: 30px;border:2px solid white;border-top: 0px;border-left: 0px;border-right: 0px">MediCab</h3><br>
 				        <p class="card-text" id='firsthead'>An Web application aimed towards integrating cab service and Hospital service under the same platform.where appointment facilities were provided for patients with pick up and drop,with other facilities too.</p>
 				      </div>
 				    </div>
-				    <a href="#" id='linkone' class="btn btn-primary" style="float: right;margin-bottom:10px;background-color: #E31F1C;margin-left: 10px;">Read More</a>
+				    <a href="#" id='linkone' class="btn btn-primary projbut">Read More</a>
 				  </div>
-				  <div class="col-sm-5" style="border:3px solid black;margin-right: 20px;margin-left: 20px;;background-color: black;">
+				  <div class="col-sm-5"  style="width:380px" id='cardone'>
 				    <div class="card" style="height: 290px;">
 				      <div class="card-body">
 				        <h5 class="card-title" id='second' style="font-family:Courier;font-size: 30px;border:2px solid white;border-top: 0px;border-left: 0px;border-right: 0px">My Website </h5><br>
@@ -461,8 +482,8 @@
 
 		<!-- second line -->
 			<div id='modals' class="row" style='margin-top: 20px;margin-bottom: 20px;margin-left: 20px;color:white'>
-  				<div class="col-sm-5 " style="border:3px solid black;margin-right: 35px;margin-left: 20px;background-color: black;">
-				    <div class="card" style="height: 310px;">
+  				<div class="col-sm-5 " style="width:380px" id='cardone'>
+				    <div class="card" style="height: 320px;">
 				      <div class="card-body" >
 				        <h5 class="card-title" id='third' style="font-family:Courier;font-size: 30px;border:2px solid white;border-top: 0px;border-left: 0px;border-right: 0px">SpeakTo-Me</h5><br>
 				        <p class="card-text" id='thirdhead'>This is a script which runs and simulates computer intelligence.In this application I have used wolfram alpha api and wikipedia api to fetch results and use microphone and speak for better interaction with users.</p>
@@ -470,7 +491,7 @@
 				    </div>
 				    <a id='linkthree' href=" https://github.com/RangerOne-1/SpeakTOme" class="btn btn-primary" style="float: right;margin-bottom:10px;background-color: #E31F1C;">Read More</a>
 				  </div>
-				  <div class="col-sm-5" style="border:3px solid black;margin-right: 20px;margin-left: 20px;;background-color: black;">
+				  <div class="col-sm-5" style="width:380px" id='cardone'>
 				    <div class="card" style="height: 310px;">
 				      <div class="card-body">
 				        <h5 class="card-title" style="font-family:Courier;font-size: 30px;border:2px solid white;border-top: 0px;border-left: 0px;border-right: 0px" id='fourth'>Root Subdomain Extractor</h5><br>
