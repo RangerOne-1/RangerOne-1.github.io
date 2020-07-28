@@ -82,7 +82,7 @@
   				margin-left: 150px;
   				margin-bottom: 20px;
   			}
-  			#cardone{
+  			.cardone {
   				border:3px solid black;
   				margin-right: 35px;
   				margin-left: 20px;
@@ -206,7 +206,7 @@
 <!-- nava bar -->
 
 <div class="topnav" id='navbar' style="font-family:Courier;">
-  <a class="active" href="#about">About Me</a>
+  <a class="active" style="background-color: red;color: white" href="#about">About Me</a>
   <a type="button" class="btn btn-primary" data-toggle="modal" data-target=".skill" style="background-color:#333;border-width: 0px; ">Skills</a>
   <a type="button" class="btn btn-primary" data-toggle="modal" data-target=".project" style="background-color:#333;border-width: 0px; ">Project's</a>
   <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#education"  style="background-color:#333;border-width: 0px; ">Education</a>
@@ -391,7 +391,9 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <center><h5 class="modal-title" id="exampleModalLabel" style="font-family:Courier;font-size: 40px;">Project's</h5></center>
+        <center><h5 class="modal-title" id="exampleModalLabel" style="font-family:Courier;font-size: 40px;">Project's</h5>
+        <p id='upproj'></p>
+    </center>
     </div>
         <div class="preloader-wrapper big active">
   <div class="spinner-layer spinner-blue-only">
@@ -400,51 +402,102 @@
 
     	<script type="text/javascript">
     		
-    		var heading = ["MediCab","My Website","SpeakTo-Me","Root Subdomain Extractor","KeyLogger","JS/HTML beautify","check_port","MultiMirror"];
-    		var link = ["#","https://rangerone-1.github.io/","https://github.com/RangerOne-1/SpeakTOme","https://github.com/RangerOne-1/tools/blob/master/scripts/root_domain_discover.sh","https://github.com/RangerOne-1/KeyLogger","https://github.com/RangerOne-1/tools/blob/master/scripts/js_beautifier.py","https://github.com/RangerOne-1/tools/blob/master/scripts/check_port.sh","https://github.com/RangerOne-1/CG1"];
-    		var data = ["An Web application aimed towards integrating cab service and Hospital service under the same platform.where appointment facilities were provided for patients with pick up and drop,with other facilities too.","This is a webpage hosted on GitHub.which is my personal webpage currently.","This is a script which runs and simulates computer intelligence.In this application I have used wolfram alpha api and wikipedia api to fetch results and use microphone and speak for better interaction with users.","This script searches for subdomains based on their certificate issued during their registration and by which can be accessed by querying crt.sh,certspotter,threat crowd,assetfinder and parse over the returned data and extract the subdomain's","This script logs all the keystroke made by a user and send it a particular mail id.For Educational Purpose Only","This script take a javascript or html file as input and beautify it. and destroy the old file and create new file which is beautified with same name.","This is a port scanner where it does the regular port scan and compare with the previous scan and report if there are any diffrence. This script needs Nmap to work","This is a project on Computer Graphics developed using openCG in C. here this program simulates the mirror reflection of a object which is kept infront of the mirror."];
+    		var heading = ["MediCab","My Website","SpeakTo-Me","Root Subdomain Extractor","KeyLogger","JS/HTML beautify","check_port","MultiMirror","url Shortner"];
+    		var link = ["#","https://rangerone-1.github.io/","https://github.com/RangerOne-1/SpeakTOme","https://github.com/RangerOne-1/tools/blob/master/scripts/root_domain_discover.sh","https://github.com/RangerOne-1/KeyLogger","https://github.com/RangerOne-1/tools/blob/master/scripts/js_beautifier.py","https://github.com/RangerOne-1/tools/blob/master/scripts/check_port.sh","https://github.com/RangerOne-1/CG1","#"];
+    		var data = ["An Web application aimed towards integrating cab service and Hospital service under the same platform.where appointment facilities were provided for patients with pick up and drop,with other facilities too.","This is a webpage hosted on GitHub.which is my personal webpage currently.","This is a script which runs and simulates computer intelligence.In this application I have used wolfram alpha api and wikipedia api to fetch results and use microphone and speak for better interaction with users.","This script searches for subdomains based on their certificate issued during their registration and by which can be accessed by querying crt.sh,certspotter,threat crowd,assetfinder and parse over the returned data and extract the subdomain's","This script logs all the keystroke made by a user and send it a particular mail id.For Educational Purpose Only","This script take a javascript or html file as input and beautify it. and destroy the old file and create new file which is beautified with same name.","This is a port scanner where it does the regular port scan and compare with the previous scan and report if there are any diffrence. This script needs Nmap to work","This is a project on Computer Graphics developed using openCG in C. here this program simulates the mirror reflection of a object which is kept infront of the mirror.","a page which give a shortned url by taking a long url"];
     		
     		function one(){
     			document.getElementById("first").innerHTML = heading[0];
     			document.getElementById("firsthead").innerHTML = data[0];
+    			document.getElementById("linkone").style.visibility = "visible";
+    			document.getElementById("cardone").style.visibility = "visible";
     			document.getElementById("linkone").href = link[0];
+
 
     			document.getElementById("second").innerHTML = heading[1];
     			document.getElementById("secondhead").innerHTML = data[1];
+    			document.getElementById("linktwo").style.visibility = "visible";
+    			document.getElementById("cardtwo").style.visibility = "visible";
     			document.getElementById("linktwo").href = link[1];
 
     			document.getElementById("third").innerHTML = heading[2];
     			document.getElementById("thirdhead").innerHTML = data[2];
+    			document.getElementById("linkthree").style.visibility = "visible";
+    			document.getElementById("cardthree").style.visibility = "visible";
     			document.getElementById("linkthree").href = link[2];
 
     			document.getElementById("fourth").innerHTML = heading[3];
     			document.getElementById("fourthhead").innerHTML = data[3];
+    			document.getElementById("linkfour").style.visibility = "visible";
+    			document.getElementById("cardfour").style.visibility = "visible";
     			document.getElementById("linkfour").href = link[3];
 
     			document.getElementById("idtwo").className = '';
+    			document.getElementById("upcoming").className = '';
     			document.getElementById("idone").className = 'active';
+    			document.getElementById("upproj").innerHTML = "";
     		}
 
 
     		function two(){
+    			document.getElementById("idone").className = '';
+    			document.getElementById("upcoming").className = '';
+    			document.getElementById("idtwo").className = 'active';
+    			document.getElementById("upproj").innerHTML = "";
+
     			document.getElementById("first").innerHTML = heading[4];
     			document.getElementById("firsthead").innerHTML = data[4];
+    			document.getElementById("linkone").style.visibility = "visible";
+    			document.getElementById("cardone").style.visibility = "visible";
     			document.getElementById("linkone").href = link[4];
 
     			document.getElementById("second").innerHTML = heading[5];
     			document.getElementById("secondhead").innerHTML = data[5];
+    			document.getElementById("linktwo").style.visibility = "visible";
+    			document.getElementById("cardtwo").style.visibility = "visible";
     			document.getElementById("linktwo").href = link[5];
 
     			document.getElementById("third").innerHTML = heading[6];
     			document.getElementById("thirdhead").innerHTML = data[6];
+    			document.getElementById("linkthree").style.visibility = "visible";
+    			document.getElementById("cardthree").style.visibility = "visible";
     			document.getElementById("linkthree").href = link[6];
 
     			document.getElementById("fourth").innerHTML = heading[7];
     			document.getElementById("fourthhead").innerHTML = data[7];
+    			document.getElementById("linkfour").style.visibility = "visible";
+    			document.getElementById("cardfour").style.visibility = "visible";
     			document.getElementById("linkfour").href = link[7];
 
+    			
+    		}
+    		function three(){
     			document.getElementById("idone").className = '';
-    			document.getElementById("idtwo").className = 'active';
+    			document.getElementById("idtwo").className = '';
+    			document.getElementById("upcoming").className = 'active';
+    			document.getElementById("upproj").innerHTML = "(If you wish to join to work on a project contact me.)";
+
+    			document.getElementById("first").innerHTML = heading[8];
+    			document.getElementById("firsthead").innerHTML = data[8];
+    			document.getElementById("linkone").style.visibility = "hidden";
+
+    			//document.getElementById("second").innerHTML = heading[9];
+    			//document.getElementById("secondhead").innerHTML = data[9];
+    			document.getElementById("cardtwo").style.visibility = "hidden";
+    			document.getElementById("linktwo").style.visibility = "hidden";
+
+
+    			//document.getElementById("third").innerHTML = heading[10];
+    			//document.getElementById("thirdhead").innerHTML = data[10];
+    			document.getElementById("cardthree").style.visibility = "hidden";
+    			document.getElementById("linkthree").style.visibility = "hidden";
+
+
+    			//document.getElementById("fourth").innerHTML = heading[11];
+    			//document.getElementById("fourthhead").innerHTML = data[11];
+    			document.getElementById("cardfour").style.visibility = "hidden";
+    			document.getElementById("linkfour").style.visibility = "hidden";
+
     			
     		}
 
@@ -459,7 +512,7 @@
 
     	<!-- first line -->
     		<div id='modals' class="row" style='margin-top: 20px;margin-bottom: 20px;margin-left: 20px;color:white;'>
-  				<div class="col-sm-5 " id='cardone' style="width:380px">
+  				<div class="col-sm-5 cardone" id='cardone' style="width:380px">
 				    <div class="card" style="height: 290px;">
 				      <div class="card-body">
 				        <h3 class="card-title" id='first' style="font-family:Courier;font-size: 30px;border:2px solid white;border-top: 0px;border-left: 0px;border-right: 0px">MediCab</h3><br>
@@ -468,7 +521,7 @@
 				    </div>
 				    <a href="#" id='linkone' class="btn btn-primary projbut">Read More</a>
 				  </div>
-				  <div class="col-sm-5"  style="width:380px" id='cardone'>
+				  <div class="col-sm-5 cardone"  style="width:380px" id='cardtwo'>
 				    <div class="card" style="height: 290px;">
 				      <div class="card-body">
 				        <h5 class="card-title" id='second' style="font-family:Courier;font-size: 30px;border:2px solid white;border-top: 0px;border-left: 0px;border-right: 0px">My Website </h5><br>
@@ -482,7 +535,7 @@
 
 		<!-- second line -->
 			<div id='modals' class="row" style='margin-top: 20px;margin-bottom: 20px;margin-left: 20px;color:white'>
-  				<div class="col-sm-5 " style="width:380px" id='cardone'>
+  				<div class="col-sm-5 cardone" style="width:380px" id='cardthree'>
 				    <div class="card" style="height: 320px;">
 				      <div class="card-body" >
 				        <h5 class="card-title" id='third' style="font-family:Courier;font-size: 30px;border:2px solid white;border-top: 0px;border-left: 0px;border-right: 0px">SpeakTo-Me</h5><br>
@@ -491,7 +544,7 @@
 				    </div>
 				    <a id='linkthree' href=" https://github.com/RangerOne-1/SpeakTOme" class="btn btn-primary" style="float: right;margin-bottom:10px;background-color: #E31F1C;">Read More</a>
 				  </div>
-				  <div class="col-sm-5" style="width:380px" id='cardone'>
+				  <div class="col-sm-5 cardone" style="width:380px" id='cardfour'>
 				    <div class="card" style="height: 310px;">
 				      <div class="card-body">
 				        <h5 class="card-title" style="font-family:Courier;font-size: 30px;border:2px solid white;border-top: 0px;border-left: 0px;border-right: 0px" id='fourth'>Root Subdomain Extractor</h5><br>
@@ -505,9 +558,9 @@
 					<ul class="pagination">
   <li id='idone' class='active'><a onclick='one()' href="#">1</a></li>
   <li id='idtwo'><a onclick='two()' href="#">2</a></li>
+  <li id='upcoming'><a onclick='three()' href="#">upcoming Project</a></li>
 </ul>
 				</center>
-
 
     </div>
   </div>
