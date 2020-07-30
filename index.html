@@ -435,12 +435,14 @@
     			document.getElementById("idtwo").className = '';
     			document.getElementById("upcoming").className = '';
     			document.getElementById("idone").className = 'active';
+          document.getElementById("idthree").className = '';
     			document.getElementById("upproj").innerHTML = "";
     		}
 
 
     		function two(){
     			document.getElementById("idone").className = '';
+          document.getElementById("idthree").className = '';
     			document.getElementById("upcoming").className = '';
     			document.getElementById("idtwo").className = 'active';
     			document.getElementById("upproj").innerHTML = "";
@@ -471,9 +473,43 @@
 
     			
     		}
-    		function three(){
+
+
+        function three(){
+          document.getElementById("idone").className = '';
+          document.getElementById("idtwo").className = '';
+          document.getElementById("upcoming").className = '';
+          document.getElementById("idthree").className = 'active';
+
+          document.getElementById("first").innerHTML = heading[9];
+          document.getElementById("firsthead").innerHTML = data[9];
+          document.getElementById("linkone").href = '#';
+          document.getElementById("linkone").style.visibility = "visible";
+
+          //document.getElementById("second").innerHTML = heading[9];
+          //document.getElementById("secondhead").innerHTML = data[9];
+          document.getElementById("cardtwo").style.visibility = "hidden";
+          document.getElementById("linktwo").style.visibility = "hidden";
+
+
+          //document.getElementById("third").innerHTML = heading[10];
+          //document.getElementById("thirdhead").innerHTML = data[10];
+          document.getElementById("cardthree").style.visibility = "hidden";
+          document.getElementById("linkthree").style.visibility = "hidden";
+
+
+          //document.getElementById("fourth").innerHTML = heading[11];
+          //document.getElementById("fourthhead").innerHTML = data[11];
+          document.getElementById("cardfour").style.visibility = "hidden";
+          document.getElementById("linkfour").style.visibility = "hidden";
+
+        }
+
+
+    		function upcoming(){
     			document.getElementById("idone").className = '';
     			document.getElementById("idtwo").className = '';
+          document.getElementById("idthree").className = '';
     			document.getElementById("upcoming").className = 'active';
     			document.getElementById("upproj").innerHTML = "(If you wish to join to work on a project contact me.)";
 
@@ -481,8 +517,9 @@
     			document.getElementById("firsthead").innerHTML = data[8];
     			document.getElementById("linkone").style.visibility = "hidden";
 
-    			document.getElementById("second").innerHTML = heading[9];
-    			document.getElementById("secondhead").innerHTML = data[9];
+    			//document.getElementById("second").innerHTML = heading[9];
+    			//document.getElementById("secondhead").innerHTML = data[9];
+          document.getElementById("cardtwo").style.visibility = "hidden";
     			document.getElementById("linktwo").style.visibility = "hidden";
 
 
@@ -555,9 +592,10 @@
 				</div>
 				<center>
 					<ul class="pagination">
-  <li id='idone' class='active'><a onclick='one()' href="#">1</a></li>
-  <li id='idtwo'><a onclick='two()' href="#">2</a></li>
-  <li id='upcoming'><a onclick='three()' href="#">upcoming Project</a></li>
+  <li id='idone' class='active'><a onclick='one()'>1</a></li>
+  <li id='idtwo'><a onclick='two()' >2</a></li>
+  <li id='idthree'><a onclick='three()' >3</a></li>
+  <li id='upcoming'><a onclick='upcoming()' >upcoming Project</a></li>
 </ul>
 				</center>
 
