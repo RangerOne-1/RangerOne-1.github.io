@@ -1,0 +1,867 @@
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+.Main-content,
+.Index-page-content {
+  padding: 0 !important;
+}
+.Main-content .code-block,
+.sqs-layout .sqs-row .sqs-block:last-child,
+.sqs-layout .sqs-row .sqs-block:first-child {
+  padding: 0 !important;
+}
+
+#new-page-50 .sqs-block.html-block,
+#new-page-72 .sqs-block.html-block {
+  display: ;
+}
+.Index .Index-page .sqs-block.html-block p {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a.in-link {
+  color: #1a1a1a;
+  letter-spacing: 0.14em;
+  font-size: 16px;
+  border: 1px solid #999;
+  padding: 11px 30px;
+  min-width: 150px;
+  display: inline-block;
+  margin: 40px 50px 0px 0px;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.4s;
+  transition-timing-function: ease-out;
+  line-height: 100%;
+}
+
+a.in-link:hover {
+  background: #999;
+  color: #fff;
+  border: 1px solid #999;
+}
+
+.in-link.white {
+  color: #fff;
+  background: #7b9a84;
+  letter-spacing: 0.14em;
+  font-size: 16px;
+  border: 0px solid #afb9b2;
+  padding: 11px 30px;
+  min-width: 150px;
+  display: inline-block;
+  margin: 40px 5% 0px 5%;
+  text-align: center;
+  text-decoration: none;
+}
+
+a.in-link.white:hover {
+  background: #999;
+  color: #fff;
+  border: 0px solid #999;
+}
+
+a.pink {
+  color: #ae8a80;
+  text-decoration: none;
+  border-bottom: 1px solid #dec4bd;
+  padding-bottom: 0.1em;
+  transition: 0.2s;
+}
+
+a.pink:hover {
+  color: #876b63;
+  border-bottom: 1px solid #c5aba4;
+}
+
+span.pink,
+.high-light {
+  color: #ae8a80;
+}
+
+/* GENERAL STYLE */
+
+p {
+  margin: 1em 0;
+  line-height: 150%;
+}
+
+body {
+  font-family: adobe-garamond-pro, "Cormorant Garamond", serif;
+  font-feature-settings: "lnum" 1;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+/* TITLE SECTION */
+.title-section {
+  background: #c6ada6;
+  height: 390px;
+  color: white;
+  padding: 70px 70px 22px;
+  text-align: center;
+  position: relative;
+  display: none;
+}
+
+.title-section:after {
+  content: "";
+  width: 100%;
+  background: url("https://static1.squarespace.com/static/5b63d343b105984b697b5c51/t/5ca7412f1905f45106b826a4/1554465076943/texture.png")
+    no-repeat center bottom / cover;
+  opacity: 0.18;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.title-section .container {
+  position: relative;
+  z-index: 5;
+}
+
+.title-section h1 {
+  font-size: 50px;
+  font-weight: normal;
+  letter-spacing: 0.14em;
+  height: 210px;
+  line-height: 105%;
+  font-family:;
+  color: white;
+  vertical-align: middle;
+  position: relative;
+  padding: 98px 0px 0px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  z-index: 5;
+  font-family: adobe-garamond-pro;
+}
+.title-section h1:after {
+  content: "";
+  background: url('https://static1.squarespace.com/static/5b63d343b105984b697b5c51/t/5ca0bf28f9619a88d32f44ce/1554038585038/tree-bg.png')
+    no-repeat center;
+  background-size: contain;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+}
+
+.title-section .date {
+  font-size: 12px;
+  text-align: right;
+  position: absolute;
+  bottom: -22px;
+  right: 10px;
+}
+/* TITLE SECTION END */
+
+/* INTRO SECTION */
+
+.main-bg {
+  position: relative;
+  z-index: 1;
+}
+.main-bg:before {
+  content: "2";
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;
+  background: url(https://static1.squarespace.com/static/5b63d343b105984b697b5c51/t/5ca62f619140b7c187734f62/1554394979262/tree_b.png) no-repeat center 30% / 110% auto;
+  z-index:2;
+  opacity:0.044;
+}
+.intro-section {
+  text-align: center;
+  padding: 60px 0px 40px;
+  position: relative;
+  z-index: 5;
+}
+
+.intro-section .container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 35px;
+  color: #3c3a3a;
+}
+.intro-section h1 {
+  font-size: 50px;
+  font-weight: normal;
+  font-family: adobe-garamond-pro;
+  line-height: 150%;
+  font-weight: normal;
+}
+
+.intro-section .container p {
+  font-size: 20px;
+}
+.intro-section .container div.branch {
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+  background: gray;
+  background: url("https://static1.squarespace.com/static/5b63d343b105984b697b5c51/t/5ca47b68e79c708fc12b4b1c/1554283369331/branch_b.svg")
+    no-repeat center;
+  opacity: 0.5;
+  margin-top: 10px;
+}
+
+/* INTRO SECTION END */
+
+/* NOTE SECTION  */
+.note {
+  background: #fff;
+  padding: 50px 55px 105px;
+  position: relative;
+}
+
+.note .container {
+  background: url("https://static1.squarespace.com/static/5b63d343b105984b697b5c51/t/5cac6fe408522927f4aad8b7/1554804722180/pattern_V5.jpg") repeat-x center center / auto 100% ;
+  max-width: 1080px;
+  margin: 0 auto;
+  -webkit-box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.15);
+  box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.15);
+  padding: 120px 122px 90px;
+  position: relative;
+  z-index: 5;
+  font-size: 22px;
+}
+.note .container:after {
+  content:"";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: white;
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  z-index: -1 ;
+}
+.note .container .texts p {
+  max-width: 100%;
+  font-size: 21px;
+  line-height: 1.8em;
+  padding-bottom: 15px;
+}
+/*
+.note .container {
+  background: white url("https://static1.squarespace.com/static/5b63d343b105984b697b5c51/t/5ca726da7817f735b7b87981/1554458332376/orange_light.png") no-repeat 115% -30px / 200px auto;
+  padding: 100px 45px 70px 45px;
+}*/
+
+.note .container span.sub-text {
+  font-size: 16px !important;
+  width: 100%;
+  display: inline-block;
+}
+/*
+a.in-link {
+  width: 220px;
+  margin: 25px calc( (100% - 220px) /2) 0px;
+  font-size: 15px;
+  padding: 11px 10px;
+}*/
+
+.note .container .texts .sub-text {
+  font-size: 18px;
+  line-height: 1.3em;
+  display: block;
+  margin-bottom: 1em;
+}
+
+/* NOTE SECTION END */
+
+/* CEREMONY SECTION */
+
+.ceremony-section {
+  background: linear-gradient( rgba(0, 0, 0, 0.55),  rgba(0, 0, 0, 0.2) ), url('https://static1.squarespace.com/static/5b63d343b105984b697b5c51/t/5ca88ebb53450a1c3db6908e/1554550483768/IMG_3290.JPG') no-repeat right top / cover;
+  padding: 115px 0px 125px;
+  text-align: center;
+  color: white;
+}
+
+h1.section-title {
+  font-size: 42px;
+  font-family: adobe-garamond-pro;
+  line-height: 130%;
+  font-weight: normal;
+  color: white;
+  -webkit-text-shadow: 2px 2px 5px #000;
+  -moz-text-shadow: 2px 2px 5px #000;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.ceremony-section h3 {
+  font-size: 22px;
+  -webkit-text-shadow: 2px 2px 5px #000;
+  -moz-text-shadow: 2px 2px 5px #000;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.ceremony-section h1,
+.ceremony-section h3 {
+  font-weight: normal;
+  margin: 0.3em 0;
+  letter-spacing: 0.14em;
+  font-family: adobe-garamond-pro;
+  line-height: 150%;
+  color: white;
+  text-transform: none;
+}
+
+
+.ceremony-section .event-card {
+  height: auto;
+  width: 85%;
+  max-width: 1370px;
+  margin: 45px  auto 55px ;
+  position: relative;
+  padding: 0px 85px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.ceremony-section .event-card .card-container {
+  position: relative;
+  flex-basis: 100%;
+  min-height: 405px;
+  margin: 25px auto 0px;
+  z-index: 5;
+  color: #444;
+  background: rgba(255, 255, 255, 0);
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  text-decoration: none;
+}
+
+.ceremony-section .event-card .card-container:after {
+  content: "";
+  background: url("https://static1.squarespace.com/static/5b63d343b105984b697b5c51/t/5ca6644a104c7b2d50f60e4a/1554408524222/tree_w.png")
+    no-repeat 97% center / 40%;
+  background-color: #6d8c76;
+  position: absolute;
+  top: 0;
+  right: 5%;
+  height: 100%;
+  width: 80%;
+  z-index: 3;
+  transition: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.card-container:hover .details h1 {
+  color: #444;
+}
+
+.ceremony-section .event-card .card-container:hover::after {
+  filter: brightness(93%);
+  -webkit-filter: brightness(93%);
+}
+
+.date-card {
+  background: rgba(255, 255, 255, 1);
+  width: 60%;
+  border: 1px solid rgba(91,114,98,0.2);
+  -webkit-box-shadow: 5px 5px 9px 4px rgba(0,0,0,0.09);
+  -moz-box-shadow: 5px 5px 9px 4px rgba(0,0,0,0.09);
+  box-shadow: 5px 5px 9px 4px rgba(0,0,0,0.09);
+  margin: 25px auto;
+  height: 340px;
+  max-height: 90%;
+  margin-left: 0%;
+  padding: 0 0;
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #444;
+  transition: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.card-container:hover .date-card {
+  height: 330px;
+}
+
+.date-box {
+  display: inline-block;
+  background: #6d8c76;
+  color: white;
+  width: 70px;
+  min-width: 70px;
+  min-height: 70px;
+  height: 70px;
+  margin-right: 1%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  transform: scale(1.25);
+}
+.day-no {
+  font-family: adobe-garamond-pro;
+  width: 100%;
+  font-size: 31px;
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+  letter-spacing: 0.27em;
+  padding-left: 0.27em;
+}
+.date-box .month-no {
+  font-family: adobe-garamond-pro;
+  width: 100%;
+  display: inline-block;
+  line-height: 70%;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0.4em;
+  padding-left: 0.2em;
+  padding-bottom: 0.2em;
+}
+.ceremony-section a.in-link.white {
+  min-width: 250px;
+}
+.details {
+  text-align: center;
+  padding: 0 10px;
+  width:65%;
+  /*min-width:400px;*/
+}
+.details h1 {
+  font-family: adobe-garamond-pro;
+  line-height: 120%;
+  color: #707070;
+  letter-spacing: 0.14em;
+  font-size: 24px;
+  max-width: 383px;
+  text-align: center;
+  margin: 0.5em auto;
+  transition: 0.4s;
+  transition-timing-function: ease-out;
+}
+.details p {
+  font-size: 18px;
+  width: 100%;
+  margin: 0 auto 0.5em;
+}
+.details a.pink {
+  font-size: 19.5px;
+  text-decoration: none;
+  border-bottom: 1px solid #bda99f;
+  padding-bottom: 0.15em;
+}
+.date-text {
+  white-space: nowrap;
+}
+
+/* CEREMONY SECTION END */
+
+@media screen and (max-width: 1080px) {
+  .note .container {
+    /*background: white
+      url("https://static1.squarespace.com/static/5b63d343b105984b697b5c51/t/5ca726da7817f735b7b87981/1554458332376/orange_light.png")
+      no-repeat 120% -70px / 40%;*/
+    padding: 80px 102px 70px 90px;
+  }
+  .note .container .texts p {
+    max-width: 95%;
+    font-size: 21px;
+    line-height: 160%;
+  }
+  .title-section {
+    height: auto;
+    padding: 55px 70px 35px;
+  }
+  .title-section h1 {
+    font-size: 46px;
+    padding: 94px 0 0;
+    height: 200px;
+  }
+  .ceremony-section {
+    padding: 85px 0px 105px;
+  }
+  .ceremony-section h3 {
+    font-size: 20px;
+  }
+  .ceremony-section .event-card {
+    height: auto ;
+    padding: 15px 85px 5px;
+  }
+  .ceremony-section .event-card .card-container {
+    min-height: 380px;
+    margin: 35px auto;
+    background: rgba(255, 255, 255, 0);
+  }
+  .date-card {
+    width: 59%;
+    margin: 25px auto;
+    height: 310px;
+    max-height: 90%;
+    margin-left: 0%;
+    padding-right: 10px;
+    }
+  .card-container:hover .date-card {
+    height: 299px;
+  }
+  .date-box {
+    margin-left: 40px ;
+    margin-right: 10px;
+    transform: scale(1.2);
+  }
+  .details h1 {
+    font-size: 26px;
+  }
+  .details {
+    width: 75%;
+    min-width: auto;
+  }
+
+  .ceremony-section a.in-link.white {
+    margin-top: 5px;
+  }
+  .ceremony-section .event-card .card-container:after {
+    width:80%;
+    background-position:98% center;
+  }
+}
+
+
+@media screen and (min-width: 769px) {
+
+  .ceremony-section .event-card {
+    height: auto;
+    width: 80%;
+    max-width: 680px;
+    padding: 0;
+  }
+  .date-card {
+    height: 188px;
+  }
+  .card-container:hover .date-card {
+    height:  198px;
+  }
+  .ceremony-section .event-card .card-container     {
+    height: 238px;
+    min-height: auto;
+  }
+  .details h1 {
+    font-size: 17px;
+  }
+  .details h4 {
+    font-size: 16px;
+  }
+  .details p {
+    font-size: 14px;
+    line-height: 150%;
+  }
+  .date-box {
+    transform: scale(0.8);
+    margin-right:5%;
+}
+  .ceremony-section .event-card .card-container:nth-child(3):after {
+  content: "";
+  background: url("https://static1.squarespace.com/static/5b63d343b105984b697b5c51/t/5ca6644a104c7b2d50f60e4a/1554408524222/tree_w.png")
+    no-repeat 91% center / 38%;
+    background-color: #6d8c76;
+  }
+  .ceremony-section .event-card .card-container:nth-child(4):after {
+    background: url("https://static1.squarespace.com/static/5b63d343b105984b697b5c51/t/5ca7a5e0e4966bff32043962/1554490850467/boat-w.png")
+      no-repeat 87% 30% / auto 95%;
+    background-color: #6d8c76 ;
+  }
+}
+
+
+@media screen and (max-width: 960px) {
+  .note .container .texts p {
+    max-width: 95%;
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+ .texts a.in-link {
+    width: 40%;
+    margin: 30px 4.5% 0px;
+    font-size: 16px;
+    padding: 11px 10px;
+  }
+  .title-section {
+    height: auto;
+    padding: 55px 20px 35px;
+  }
+  .title-section h1 {
+    font-size: 32px;
+    padding: 84px 0 0;
+    height: 180px;
+  }
+  .ceremony-section {
+    padding: 85px 0px 105px;
+  }
+  .ceremony-section h3 {
+    font-size: 20px;
+    padding: 0 10px;
+  }
+  /*.ceremony-section .event-card {
+    height: auto ;
+    padding: 15px 85px 5px;
+  }
+  .ceremony-section .event-card .card-container {
+    min-height: 370px;
+    margin: 35px auto;
+    background: rgba(255, 255, 255, 0);
+  }
+  .ceremony-section .event-card .card-container:after {
+  background: url("https://static1.squarespace.com/static/5b63d343b105984b697b5c51/t/5ca6644a104c7b2d50f60e4a/1554408524222/tree_w.png")
+    no-repeat 96% center / 41%;
+  background-color: #6d8c76;
+  top: 0;
+  right: 0%;
+  height: 100%;
+  width: 80%;
+}
+  .date-card {
+    width: 64%;
+    margin: 25px auto;
+    height: 290px;
+    max-height: 90%;
+    margin-left: 0%;
+    }
+  .date-box {
+    transform: scale(1.05);
+    margin-left:20px;
+  }
+  .card-container:hover .date-card {
+    height: 279px;
+  }
+  .details h1 {
+    font-size: 22px;
+  }
+  .details p {
+    font-size: 15px;
+    margin:0 auto 0.3em;
+  }*/
+
+  .ceremony-section a.in-link.white {
+    margin-top: 10px;
+  }
+
+}
+@media screen and (max-width: 768px) {
+  .note {
+    padding: 85px 9%;
+  }
+  .note .container {
+    /*background: white    url("https://static1.squarespace.com/static/5b63d343b105984b697b5c51/t/5ca726da7817f735b7b87981/1554458332376/orange_light.png")
+      no-repeat 115% -30px / 200px auto;*/
+    padding: 100px 15% 70px 15%;
+  }
+  .note .container .texts p {
+    max-width: 100%;
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+  .texts a.in-link {
+    width: 220px;
+    margin: 25px calc( (100% - 220px) /2) 0px;
+    font-size: 15px;
+    padding: 11px 10px;
+  }
+
+  .note .container span.sub-text {
+    font-size: 18px !important;
+  }
+  .ceremony-section h1 {
+    font-size: 34px;
+    padding: 0 10px;
+  }
+
+  .ceremony-section h3 {
+    font-size: 20px;
+    padding: 0 10px 10px;
+  }
+  .ceremony-section .event-card {
+    height: auto;
+    padding: 0px 0;
+  }
+  .ceremony-section .event-card:after {
+    width: calc( 77% );
+  }
+  .ceremony-section .event-card .card-container {
+    min-height: auto;
+    width: 80%;
+    margin: 20px 10% 25px;
+    background: #6d8c76;
+    transition: 0.5s;
+  }
+  .ceremony-section .event-card .card-container:after {
+    background: url("https://static1.squarespace.com/static/5b63d343b105984b697b5c51/t/5ca6644a104c7b2d50f60e4a/1554408524222/tree_w.png")
+      no-repeat center 20px / auto 200px ;
+    background-color: #6d8c76;
+    top: 0;
+    right: 0%;
+    height: 220px;
+    width: 100%;
+  }
+  .date-card {
+    width: 100%;
+    background: none;
+    color: white;
+    margin: 0px;
+    height: auto;
+    padding-top: 220px;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  .card-container:hover .date-card {
+    height: auto;
+  }
+  .date-box {
+    align-self: flex-start;
+    margin: 10px 10px 0;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: none;
+    border: none;
+  }
+
+  .details {
+    position: relative;
+    width: 100%;
+    align-self: flex-end;
+  }
+  .details h1 {
+    font-size: 20px;
+    color: white;
+    color: rgba(255,255,255,0.9);
+    line-height: 140%;
+    padding: 0 10px 3px;
+    border: none;
+  }
+  .details p {
+    display: none;
+  }
+
+  .ceremony-section a.in-link.white {
+    margin: 20px 19% 10px;
+    width:40%;
+  }
+  .card-container:hover .details h1 {
+    color: white;
+  }
+  .ceremony-section .event-card .card-container:hover::after {
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+  }
+    .ceremony-section .event-card .card-container:hover {
+      filter: brightness(94%);
+      -webkit-filter: brightness(94%);
+  }
+  .in-link.white {
+    font-size:15px;
+  }
+
+}
+@media screen and (max-width: 480px) {
+
+  .note .container:after {
+    width: calc( 100% - 40px - 17px - 17px);
+    left: 37px;
+  }
+  .note {
+    padding: 85px 0%;
+  }
+
+  .title-section {
+    padding: 60px 0px 40px;
+  }
+  .title-section h1 {
+    font-size: 28px;
+    padding: 64px 0 0;
+    height: 140px;
+    white-space: nowrap;
+  }
+  .title-section .container .date {
+    display: none;
+  }
+
+  .intro-section .container p,
+  .note .container .texts p {
+    font-size: 18px;
+  }
+
+  .note {
+    padding-bottom: 80px;
+  }
+  .note .container {
+    /*background: white
+      url("https://static1.squarespace.com/static/5b63d343b105984b697b5c51/t/5ca726da7817f735b7b87981/1554458332376/orange_light.png")
+      no-repeat 115% -30px / 200px auto;*/
+    padding: 100px 60px 70px;
+  }
+  .note .container span.sub-text {
+    font-size: 17px !important;
+  }
+
+  .ceremony-section {
+    padding: 80px 0;
+  }
+
+  .ceremony-section .container h1 {
+    font-size: 28px;
+    padding: 0 10px;
+  }
+  .ceremony-section .details h1 {
+    font-size: 17px;
+    padding: 0 10px 4px;
+  }
+  .ceremony-section .event-card:after {
+    width: calc( 74% );
+  }
+  .ceremony-section a.in-link.white {
+    margin: 15px auto 10px;
+  }
+  .ceremony-section .event-card .card-container:after {
+    background: url("https://static1.squarespace.com/static/5b63d343b105984b697b5c51/t/5ca6644a104c7b2d50f60e4a/1554408524222/tree_w.png")
+      no-repeat center 20px / auto 160px ;
+    background-color: #6d8c76;
+    top: 0;
+    right: 0%;
+    height: 180px;
+    width: 100%;
+  }
+  .date-card {
+    width: 100%;
+    background: none;
+    color: white;
+    margin: 0px;
+    height: auto;
+    padding-top: 180px;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+  }
+}
